@@ -1,6 +1,6 @@
 # Session 1 #
 ## Table of Contents ##
-
+***
   *What is a database?
   *What is in a database?
   *Structured Query Language (SQL)
