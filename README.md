@@ -22,7 +22,7 @@
       
 # Session 2
 ## Table of Contents 
--This is a change.
+-This line is added by instructor.
 # Session 3
 ## Table of Contents 
 
