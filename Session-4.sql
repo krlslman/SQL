@@ -83,10 +83,23 @@ FROM tracks t
 JOIN albums a
 ON t.AlbumId = a.AlbumId AND a.Title = 'Faceless';
 
+
 /* HOMEWORK 1 : albums tablosundaki Title sutunu Faceless veya Let There Be Rock olan kayıtların 
 albumid'lerini elde ederek tracks tablosunda bu id'lere eşit olan kayıtların bilgilerini 
 SUBQUERY kullanarak listeyiniz. Listelemede trackid, name ve albumid bilgileri bulunmalıdır. */	
 
+SELECT t.TrackId, t.name, t.AlbumId
+FROM tracks t
+WHERE t.AlbumId = (
+	SELECT a.AlbumId
+	FROM albums a
+	WHERE t.AlbumId = a.AlbumId AND a.Title IN ("Faceless", "Let There Be Rock"));
+
 /* HOMEWORK 2 :  albums tablosundaki Title sutunu Faceless veya Let There Be Rock olan kayıtların 
 albumid'lerini elde ederek tracks tablosunda bu id'lere eşit olan kayıtların bilgilerini 
-JOIN kullanarak listeyiniz.Listelemede trackid, name ve albumid bilgileri bulunmalıdır. */		
+JOIN kullanarak listeyiniz.Listelemede trackid, name ve albumid bilgileri bulunmalıdır. */
+
+SELECT t.TrackId, t.name, t.AlbumId
+FROM tracks t
+JOIN albums a
+ON t.AlbumId = a.AlbumId AND a.Title IN ("Faceless", "Let There Be Rock");
