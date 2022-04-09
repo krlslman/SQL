@@ -41,5 +41,5 @@
 - UPDATE
 - SET
 
-
+![alt text](https://github.com/krlslman/SQL/blob/50e04dbc5f1d9215009e00c0e4186b3a15d3bf49/Drawings.png)
 
