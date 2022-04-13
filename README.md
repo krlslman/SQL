@@ -1,4 +1,4 @@
-# Table of Contents :
+# Table of Contents 
 
 ## [Session 1](https://github.com/krlslman/SQL/blob/main/Session-1.sql)
 - SELECT 
